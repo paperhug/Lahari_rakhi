@@ -1,0 +1,106 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Our Little Universe · Raksha Bandhan</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Playfair+Display:ital,wght@0,600;0,700;1,600&family=Sacramento&display=swap" rel="stylesheet">
+  <style>
+    :root { --ink:#44221d; --wine:#8a1123; --saffron:#ef9c32; --cream:#fff7ea; --rose:#f9ded4; }
+    * { box-sizing:border-box; }
+    body { margin:0; color:var(--ink); background:var(--cream); font-family:"DM Sans",sans-serif; }
+    .hero { min-height:440px; padding:22px clamp(22px,6vw,92px) 44px; position:relative; overflow:hidden; color:#fff9ef;
+      background:linear-gradient(120deg,rgba(138,17,35,.96),rgba(138,17,35,.86)),url('https://www.hindustantimes.com/ht-img/img/2025/08/09/original/sujan-shahi-2i4SXRaLoIA-unsplash_1754735995098_1754736007892.jpg') center/cover; }
+    .hero::after { content:""; position:absolute; z-index:0; inset:auto -10% -305px; height:420px; background:var(--cream); border-radius:50% 50% 0 0/18% 18% 0 0; }
+    nav { position:relative; z-index:1; display:flex; justify-content:space-between; align-items:center; font-size:.76rem; letter-spacing:.14em; text-transform:uppercase; }
+    .festival-wish { margin-left:auto; color:#ffe6a8; font:400 clamp(1.6rem,3vw,2.25rem)/1 "Sacramento",cursive; letter-spacing:0; text-transform:none; }
+    .hero-copy { position:relative; z-index:1; max-width:680px; margin:2px auto 0; text-align:center; }
+    .eyebrow { font-size:.76rem; letter-spacing:.2em; text-transform:uppercase; color:#ffdb83; }
+    h1 { margin:12px 0; color:#fffaf0; text-shadow:0 2px 18px rgba(57,10,24,.38); font:600 clamp(3.3rem,9vw,6.7rem)/.95 "Playfair Display",serif; }
+    .hero-copy p { margin:0; color:#fff2cb; font-size:clamp(.97rem,2.2vw,1.08rem); line-height:1.55; }
+    .rakhi-flow { position:absolute; z-index:1; left:0; right:0; bottom:31px; width:100%; height:84px; pointer-events:none; }
+    .rakhi-flow path { fill:none; stroke:#f7c65b; stroke-width:3; stroke-linecap:round; }
+    .rakhi-flow .fine-thread { stroke:#fff1c4; stroke-width:1; opacity:.9; }
+    .rakhi-flow .rakhi-centre { fill:#f8cf72; stroke:#fff0bf; stroke-width:3; }
+    .rakhi-flow .rakhi-gem { fill:#8a1123; stroke:#f8cf72; stroke-width:3; }
+    .rakhi-flow .bead { fill:#fff1c4; }
+    .rakhi-flow .petal { fill:#f8cf72; stroke:#fff0bf; stroke-width:1.2; }
+    .rakhi-flow .accent { fill:#e98145; stroke:#fff0bf; stroke-width:1.2; }
+    main { max-width:1240px; margin:-28px auto 0; padding:0 22px 74px; position:relative; z-index:2; }
+    .note { max-width:670px; margin:12px auto 48px; text-align:center; }
+    .note h2 { margin:0 0 12px; font:600 2rem "Playfair Display",serif; color:var(--wine); }
+    .note p { line-height:1.7; margin:0; }
+    #memory-wall { columns:4 220px; column-gap:20px; }
+    .wall-6 #memory-wall { display:grid; grid-template-columns:repeat(3,minmax(190px,310px)); gap:24px; justify-content:center; columns:auto; }
+    .wall-6 .memory { display:block; margin:0; } .wall-6 .memory img { height:250px; aspect-ratio:auto; }
+    .memory { position:relative; display:inline-block; width:100%; margin:0 0 20px; break-inside:avoid; padding:9px 9px 31px; background:#fff; box-shadow:0 10px 24px rgba(75,34,28,.12); transform:rotate(var(--tilt)); transition:transform .25s ease, box-shadow .25s ease; }
+    .memory:hover { transform:rotate(0) translateY(-6px) scale(1.025); box-shadow:0 20px 34px rgba(75,34,28,.2); z-index:3; }
+    .memory img { display:block; width:100%; height:auto; aspect-ratio:var(--shape); object-fit:cover; }
+    .memory figcaption { position:absolute; bottom:8px; left:11px; right:11px; text-align:center; font:600 .85rem "Playfair Display",serif; color:#793247; }
+    .footer { text-align:center; margin-top:55px; color:var(--wine); }
+    .footer .rakhi { font-size:2.1rem; display:block; margin-bottom:8px; }
+    .footer strong { font:600 1.45rem "Playfair Display",serif; }
+    .letter-section { margin:62px -22px 0; padding:72px 22px; background:#f9e3d7; } .letter { max-width:760px; margin:auto; text-align:center; } .letter summary { display:grid; place-items:center; min-height:260px; padding:34px; position:relative; isolation:isolate; overflow:hidden; cursor:pointer; list-style:none; color:#fff9e9; background:var(--wine); box-shadow:0 15px 37px rgba(106,40,29,.18); } .letter summary::-webkit-details-marker { display:none; } .letter summary::before { content:""; position:absolute; z-index:-1; inset:0; background:#a91d34; clip-path:polygon(0 0,50% 62%,100% 0); } .letter summary span { font:600 clamp(1.7rem,4vw,2.5rem)/1.1 "Playfair Display",serif; } .letter summary small { display:block; margin-top:13px; color:#ffe2a2; font:.7rem "DM Sans",sans-serif; font-weight:700; letter-spacing:.14em; text-transform:uppercase; } .letter[open] summary { min-height:0; padding:16px; background:#751426; } .letter[open] summary::before { display:none; } .letter[open] summary span { font:600 .9rem "DM Sans",sans-serif; } .letter[open] summary small { display:none; } .letter-body { padding:clamp(30px,7vw,72px); background:#fffaf0; border:1px solid #edcfc2; } .letter-body .eyebrow { color:var(--wine); } .letter-body h2 { margin:10px 0 18px; color:var(--wine); font:600 clamp(2rem,4vw,3.2rem)/1.05 "Playfair Display",serif; font-style:italic; } .letter-body p { font:500 1.08rem/1.85 "Playfair Display",serif; } .sign { margin-top:28px; color:var(--wine); font:400 2.35rem "Sacramento",cursive; }
+    @media (max-width:600px) { .hero { min-height:445px; padding:18px 20px 56px; } nav { font-size:.61rem; letter-spacing:.1em; } .hero-copy { margin-top:42px; } .hero::after { bottom:-315px; } .rakhi-flow { bottom:21px; height:68px; } #memory-wall { columns:2 145px; column-gap:12px; } .wall-6 #memory-wall { grid-template-columns:repeat(2,minmax(0,1fr)); gap:14px; } .wall-6 .memory img { height:190px; } .memory { margin-bottom:12px; padding:6px 6px 27px; } main { padding:0 14px 50px; } }
+    @media (max-width:360px) { .hero { min-height:430px; } .hero-copy { margin-top:18px; } h1 { font-size:3.05rem; } }
+  </style>
+</head>
+<body class="wall-6">
+  <header class="hero">
+    <nav><span class="festival-wish">Happy Rakshabandhan!</span></nav>
+    <div class="hero-copy">
+      <div class="eyebrow">For my favourite person</div>
+      <h1>Our little<br><i>universe.</i></h1>
+      <p>A few moments, a thousand feelings, and a bond that always feels like home.</p>
+    </div>
+    <svg class="rakhi-flow" viewBox="0 0 1440 84" preserveAspectRatio="xMidYMid slice" aria-hidden="true">
+      <path d="M-20 55 C160 3 330 96 510 48 S820 4 1015 51 S1280 90 1460 25" />
+      <path class="fine-thread" d="M-20 62 C160 10 330 103 510 55 S820 11 1015 58 S1280 97 1460 32" />
+      <g transform="translate(720 36)">
+        <ellipse class="petal" rx="10" ry="25" transform="rotate(0) translate(0 -22)" /><ellipse class="petal" rx="10" ry="25" transform="rotate(45) translate(0 -22)" />
+        <ellipse class="petal" rx="10" ry="25" transform="rotate(90) translate(0 -22)" /><ellipse class="petal" rx="10" ry="25" transform="rotate(135) translate(0 -22)" />
+        <ellipse class="petal" rx="10" ry="25" transform="rotate(180) translate(0 -22)" /><ellipse class="petal" rx="10" ry="25" transform="rotate(225) translate(0 -22)" />
+        <ellipse class="petal" rx="10" ry="25" transform="rotate(270) translate(0 -22)" /><ellipse class="petal" rx="10" ry="25" transform="rotate(315) translate(0 -22)" />
+        <circle class="rakhi-centre" r="22" /><circle class="accent" r="14" /><circle class="rakhi-gem" r="7" />
+      </g>
+      <circle class="bead" cx="566" cy="38" r="7" /><circle class="accent" cx="603" cy="31" r="7" /><circle class="bead" cx="641" cy="29" r="7" />
+      <circle class="bead" cx="799" cy="34" r="7" /><circle class="accent" cx="838" cy="40" r="7" /><circle class="bead" cx="874" cy="45" r="7" />
+    </svg>
+  </header>
+  <main>
+    <section class="note">
+      <h2>Happy Rakhi, brother ❤️</h2>
+      <p>Every photograph here holds a version of us — the silly, the chaotic, and the forever kind. Tap any memory to make it bigger.</p>
+    </section>
+    <section class="wall" aria-label="Photo memories">
+      <div id="memory-wall">
+        <figure class="memory" style="--tilt:-2deg;--shape:4/5"><img src="Always%20laughing.JPEG" alt=""><figcaption></figcaption></figure>
+        <figure class="memory" style="--tilt:2.4deg;--shape:1/1"><img src="Everywhere%20together.JPEG" alt=""><figcaption></figcaption></figure>
+        <figure class="memory" style="--tilt:-1.2deg;--shape:4/3"><img src="just%20like%20old%20times.JPEG" alt=""><figcaption></figcaption></figure>
+        <figure class="memory" style="--tilt:1.5deg;--shape:3/4"><img src="Little%20troublemaker.jpg" alt=""><figcaption></figcaption></figure>
+        <figure class="memory" style="--tilt:2deg;--shape:4/3"><img src="More%20adventures%2C%20please.jpg" alt=""><figcaption></figcaption></figure>
+        <figure class="memory" style="--tilt:-2deg;--shape:1/1"><img src="My%20biggest%20cheerleader.JPEG" alt=""><figcaption></figcaption></figure>
+      </div>
+    </section>
+    <section class="letter-section"><details class="letter"><summary><span>A letter for you</span><small>Tap to open</small></summary><div class="letter-body"><div class="eyebrow">A letter for you</div>
+      <h2>To my forever brother,</h2>
+      <p>Thank you for being the person who knows every version of me and stays anyway. For all our fights, our jokes, and the quiet kind of care that never needs explaining.</p>
+      <p>We’ve never really told each other how much we love one another, but somehow, we’ve always known. We know that no matter what, we’ll always be there for each other—and I never want that to change.</p>
+      <p>This little keepsake is for us.</p>
+      <p>Here’s to more stories, more photographs, more memories, and a lifetime of always finding our way back home to each other.</p>
+      <div class="sign">With all my love….😍❤️</div></div></details></section>
+    <footer class="footer"><span class="rakhi">✦ 🧿 ✦</span><strong>Some bonds never need a reminder.</strong><br>But this one is worth keeping.</footer>
+  </main>
+  <script>
+    // Captions are generated from the filename, so no separate caption needs editing.
+    document.querySelectorAll('.memory img').forEach((image) => {
+      const filename = decodeURIComponent(image.getAttribute('src').split('/').pop());
+      const caption = filename.replace(/\.[^/.]+$/, '').replace(/[-_]/g, ' ');
+      image.alt = caption;
+      image.nextElementSibling.textContent = caption;
+    });
+  </script>
+</body>
+</html>
