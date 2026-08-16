@@ -33,21 +33,34 @@
     .note h2 { margin:0 0 12px; font:600 2rem "Playfair Display",serif; color:var(--wine); }
     .note p { line-height:1.7; margin:0; }
     #memory-wall { columns:4 220px; column-gap:20px; }
-    .wall-6 #memory-wall { display:grid; grid-template-columns:repeat(3,minmax(190px,310px)); gap:24px; justify-content:center; columns:auto; }
-    .wall-6 .memory { display:block; margin:0; } .wall-6 .memory img { height:250px; aspect-ratio:auto; }
     .memory { position:relative; display:inline-block; width:100%; margin:0 0 20px; break-inside:avoid; padding:9px 9px 31px; background:#fff; box-shadow:0 10px 24px rgba(75,34,28,.12); transform:rotate(var(--tilt)); transition:transform .25s ease, box-shadow .25s ease; }
     .memory:hover { transform:rotate(0) translateY(-6px) scale(1.025); box-shadow:0 20px 34px rgba(75,34,28,.2); z-index:3; }
     .memory img { display:block; width:100%; height:auto; aspect-ratio:var(--shape); object-fit:cover; }
     .memory figcaption { position:absolute; bottom:8px; left:11px; right:11px; text-align:center; font:600 .85rem "Playfair Display",serif; color:#793247; }
+    .letter-section { margin:62px -22px 0; padding:72px 22px; background:#f9e3d7; }
+    .letter { max-width:760px; margin:auto; text-align:center; }
+    .letter summary { display:grid; place-items:center; min-height:260px; padding:34px; position:relative; isolation:isolate; overflow:hidden; cursor:pointer; list-style:none; color:#fff9e9; background:var(--wine); box-shadow:0 15px 37px rgba(106,40,29,.18); }
+    .letter summary::-webkit-details-marker { display:none; }
+    .letter summary::before { content:""; position:absolute; z-index:-1; inset:0; background:#a91d34; clip-path:polygon(0 0,50% 62%,100% 0); }
+    .letter summary span { font:600 clamp(1.7rem,4vw,2.5rem)/1.1 "Playfair Display",serif; }
+    .letter summary small { display:block; margin-top:13px; color:#ffe2a2; font:.7rem "DM Sans",sans-serif; font-weight:700; letter-spacing:.14em; text-transform:uppercase; }
+    .letter[open] summary { min-height:0; padding:16px; background:#751426; }
+    .letter[open] summary::before { display:none; }
+    .letter[open] summary span { font:600 .9rem "DM Sans",sans-serif; }
+    .letter[open] summary small { display:none; }
+    .letter-body { padding:clamp(30px,7vw,72px); background:#fffaf0; border:1px solid #edcfc2; }
+    .letter-body .eyebrow { color:var(--wine); }
+    .letter-body h2 { margin:10px 0 18px; color:var(--wine); font:600 clamp(2rem,4vw,3.2rem)/1.05 "Playfair Display",serif; font-style:italic; }
+    .letter-body p { font:500 1.08rem/1.85 "Playfair Display",serif; }
+    .sign { margin-top:28px; color:var(--wine); font:400 2.35rem "Sacramento",cursive; }
     .footer { text-align:center; margin-top:55px; color:var(--wine); }
     .footer .rakhi { font-size:2.1rem; display:block; margin-bottom:8px; }
     .footer strong { font:600 1.45rem "Playfair Display",serif; }
-    .letter-section { margin:62px -22px 0; padding:72px 22px; background:#f9e3d7; } .letter { max-width:760px; margin:auto; text-align:center; } .letter summary { display:grid; place-items:center; min-height:260px; padding:34px; position:relative; isolation:isolate; overflow:hidden; cursor:pointer; list-style:none; color:#fff9e9; background:var(--wine); box-shadow:0 15px 37px rgba(106,40,29,.18); } .letter summary::-webkit-details-marker { display:none; } .letter summary::before { content:""; position:absolute; z-index:-1; inset:0; background:#a91d34; clip-path:polygon(0 0,50% 62%,100% 0); } .letter summary span { font:600 clamp(1.7rem,4vw,2.5rem)/1.1 "Playfair Display",serif; } .letter summary small { display:block; margin-top:13px; color:#ffe2a2; font:.7rem "DM Sans",sans-serif; font-weight:700; letter-spacing:.14em; text-transform:uppercase; } .letter[open] summary { min-height:0; padding:16px; background:#751426; } .letter[open] summary::before { display:none; } .letter[open] summary span { font:600 .9rem "DM Sans",sans-serif; } .letter[open] summary small { display:none; } .letter-body { padding:clamp(30px,7vw,72px); background:#fffaf0; border:1px solid #edcfc2; } .letter-body .eyebrow { color:var(--wine); } .letter-body h2 { margin:10px 0 18px; color:var(--wine); font:600 clamp(2rem,4vw,3.2rem)/1.05 "Playfair Display",serif; font-style:italic; } .letter-body p { font:500 1.08rem/1.85 "Playfair Display",serif; } .sign { margin-top:28px; color:var(--wine); font:400 2.35rem "Sacramento",cursive; }
-    @media (max-width:600px) { .hero { min-height:445px; padding:18px 20px 56px; } nav { font-size:.61rem; letter-spacing:.1em; } .hero-copy { margin-top:42px; } .hero::after { bottom:-315px; } .rakhi-flow { bottom:21px; height:68px; } #memory-wall { columns:2 145px; column-gap:12px; } .wall-6 #memory-wall { grid-template-columns:repeat(2,minmax(0,1fr)); gap:14px; } .wall-6 .memory img { height:190px; } .memory { margin-bottom:12px; padding:6px 6px 27px; } main { padding:0 14px 50px; } }
+    @media (max-width:600px) { .hero { min-height:445px; padding:18px 20px 56px; } nav { font-size:.61rem; letter-spacing:.1em; } .hero-copy { margin-top:42px; } .hero::after { bottom:-315px; } .rakhi-flow { bottom:21px; height:68px; } #memory-wall { columns:2 145px; column-gap:12px; } .memory { margin-bottom:12px; padding:6px 6px 27px; } .letter-section { margin:46px -14px 0; padding:54px 14px; } main { padding:0 14px 50px; } }
     @media (max-width:360px) { .hero { min-height:430px; } .hero-copy { margin-top:18px; } h1 { font-size:3.05rem; } }
   </style>
 </head>
-<body class="wall-6">
+<body>
   <header class="hero">
     <nav><span class="festival-wish">Happy Rakshabandhan!</span></nav>
     <div class="hero-copy">
@@ -71,26 +84,35 @@
   </header>
   <main>
     <section class="note">
-      <h2>Happy Rakhi, brother ❤️</h2>
+      <h2>Happy Rakhi, Bhai ❤️</h2>
       <p>Every photograph here holds a version of us — the silly, the chaotic, and the forever kind. Tap any memory to make it bigger.</p>
     </section>
     <section class="wall" aria-label="Photo memories">
       <div id="memory-wall">
-        <figure class="memory" style="--tilt:-2deg;--shape:4/5"><img src="Always%20laughing.jpeg" alt=""><figcaption></figcaption></figure>
-        <figure class="memory" style="--tilt:2.4deg;--shape:1/1"><img src="Everywhere%20together.jpeg" alt=""><figcaption></figcaption></figure>
-        <figure class="memory" style="--tilt:-1.2deg;--shape:4/3"><img src="just%20like%20old%20times.jpeg" alt=""><figcaption></figcaption></figure>
-        <figure class="memory" style="--tilt:1.5deg;--shape:3/4"><img src="Little%20troublemaker.jpg" alt=""><figcaption></figcaption></figure>
-        <figure class="memory" style="--tilt:2deg;--shape:4/3"><img src="More%20adventures%2C%20please.jpg" alt=""><figcaption></figcaption></figure>
+        <figure class="memory" style="--tilt:-2deg;--shape:4/5"><img src="Endless smiles.jpeg" alt=""><figcaption></figcaption></figure>
+        <figure class="memory" style="--tilt:2.4deg;--shape:1/1"><img src="Unbreakable bond.jpeg" alt=""><figcaption></figcaption></figure>
+        <figure class="memory" style="--tilt:-1.2deg;--shape:4/3"><img src="Ur little troublemaker.jpeg" alt=""><figcaption></figcaption></figure>
+        <figure class="memory" style="--tilt:1.5deg;--shape:3/4"><img src="Always watching out.jpg" alt=""><figcaption></figcaption></figure>
+        <figure class="memory" style="--tilt:2deg;--shape:4/3"><img src="Holding the memories.jpg" alt=""><figcaption></figcaption></figure>
         <figure class="memory" style="--tilt:-2deg;--shape:1/1"><img src="My%20biggest%20cheerleader.jpeg" alt=""><figcaption></figcaption></figure>
+        <figure class="memory" style="--tilt:1deg;--shape:4/5"><img src="Chaos and calm.jpeg" alt=""><figcaption></figcaption></figure>
+        <figure class="memory" style="--tilt:-1.8deg;--shape:4/3"><img src="Future frames loading....jpeg" alt=""><figcaption></figcaption></figure>
       </div>
     </section>
-    <section class="letter-section"><details class="letter"><summary><span>A letter for you</span><small>Tap to open</small></summary><div class="letter-body"><div class="eyebrow">A letter for you</div>
-      <h2>To my forever brother,</h2>
-      <p>Thank you for being the person who knows every version of me and stays anyway. For all our fights, our jokes, and the quiet kind of care that never needs explaining.</p>
-      <p>We’ve never really told each other how much we love one another, but somehow, we’ve always known. We know that no matter what, we’ll always be there for each other—and I never want that to change.</p>
-      <p>This little keepsake is for us.</p>
-      <p>Here’s to more stories, more photographs, more memories, and a lifetime of always finding our way back home to each other.</p>
-      <div class="sign">With all my love….😍❤️</div></div></details></section>
+    <section class="letter-section">
+      <details class="letter">
+        <summary><span>A letter for you</span><small>Tap to open</small></summary>
+        <div class="letter-body">
+          <div class="eyebrow">A letter for you</div>
+          <h2>To my forever brother,</h2>
+          <p>Thank you for being the person who knows every version of me and stays anyway. For all our fights, our jokes, and the quiet kind of care that never needs explaining.</p>
+          <p>We’ve never really told each other how much we love one another, but somehow, we’ve always known. We know that no matter what, we’ll always be there for each other—and I never want that to change.</p>
+          <p>This little keepsake is for us.</p>
+          <p>Here’s to more stories, more photographs, more memories, and a lifetime of always finding our way back home to each other.</p>
+          <div class="sign">With all my love</div>
+        </div>
+      </details>
+    </section>
     <footer class="footer"><span class="rakhi">✦ 🧿 ✦</span><strong>Some bonds never need a reminder.</strong><br>But this one is worth keeping.</footer>
   </main>
   <script>
